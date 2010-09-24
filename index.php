@@ -2,24 +2,29 @@
 
 <?php get_header(); ?>
 
-<?php if (have_posts()): while (have_posts()): the_post(); ?>
-	<div id="content">
-		<div class="post">
-			<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
-			<div class="post-content">
-				<?php echo the_content(); ?>
-			</div>
-			
-			<?php if(comments_open()): ?>
-				<div id="comments">
-					<?php comments_template(); ?>
-				</div>
-			<?php endif; ?>
+<div id="full-slider-wrapper">
+    <div id="full-slider">
+   
+<?php
+	$mypages = get_pages('sort_column=post_date&sort_order=desc');
+	$count = 0;
+	foreach($mypages as $page)
+	{		
+		$content = $page->post_content;
+		if(!$content)
+			continue;
 		
-		</div>
-	</div><!--#end content -->
-	<div class="sidbear">
-		<?php get_sidebar(); ?>
-	</div><!--#end sidebar -->
+			
+		$content = apply_filters('the_content', $content);
+?>
+	<div class="slide-panel <?php if ($count == 0) { echo 'active'; } ?>">
+		<h2><a href="<?php echo get_page_link($page->ID) ?>"><?php echo $page->post_title ?></a></h2>
+		<div class="entry"><?php echo $content ?></div>
+  </div>
+	<?php
+	$count++;
+	}	
+?>
+    </div>
+  </div>
 	
-<?php endwhile; endif; get_footer(); ?>

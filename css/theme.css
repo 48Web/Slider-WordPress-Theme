@@ -14,3 +14,65 @@
 #nav {}
 #sidebar {}
 #footer {}
+
+#full-slider-wrapper {
+    overflow: hidden;
+}
+
+#full-slider {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+#full-slider .slide-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 600px;
+    visibility: hidden;
+}
+
+#full-slider .slide-panel.active {
+    visibility: visible;
+}
+
+#full-slider-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#full-slider-nav-left, #full-slider-nav-right {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    margin-left: 15px;
+    border: 20px solid transparent;
+    cursor: pointer;
+}
+
+#full-slider-nav-left {
+    border-right-color: #BBB;
+}
+
+#full-slider-nav-left:hover {
+    border-right-color: #999;
+}
+
+#full-slider-nav-right {
+    border-left-color: #BBB;
+}
+
+#full-slider-nav-right:hover {
+    border-left-color: #999;
+}
+
+/* styles below are only for this example */
+
+#full-slider .slide-panel {
+    background-color: #555;
+    color: #DDD;
+}
