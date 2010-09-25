@@ -33,7 +33,7 @@ jQuery(function(){
   
   var $slider = jQuery('#full-slider');
   var $sliderPanels = $slider.children('.slide-panel');
-  
+
   var $navWrap = jQuery('<div id="full-slider-nav"></div>').appendTo( $slider );
   var $navLeft = jQuery('<div id="full-slider-nav-left"></div>').appendTo( $navWrap );
   var $navRight = jQuery('<div id="full-slider-nav-right"></div>').appendTo( $navWrap );
