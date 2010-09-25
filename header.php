@@ -45,8 +45,9 @@
 <body <?php body_class(); ?>>
 	<div class="container">
 		<div id="header">
-			<div id="nav">
-				<ul>
+			<div id="nav" class="black">
+			  <div class="left"></div>
+				<ul id="menu">
 					<li> <a href="<?php get_bloginfo('home'); ?>">Home</a> </li>
 					<?php wp_list_pages('title_li='); ?>
 				</ul>

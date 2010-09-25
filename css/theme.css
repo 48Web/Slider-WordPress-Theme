@@ -13,14 +13,56 @@ body {
 #footer { clear: both; }
 
 /* navigation */
-#nav ul { list-style: none;   }
-#nav ul li { display: inline; }
+/* matte css menu via http://13styles.com/css-menus/matte/ */
+#menu {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0;
+	list-style-type: none;
+	background-color: #f1f1f1;
+	font-size: 13px;
+	height: 40px;
+	border-top: 2px solid #eee;
+	border-bottom: 2px solid #ccc;
+}
+#menu li {
+	float: left;
+	margin: 0;				
+}
+#menu li a {
+	text-decoration: none;
+	display: block;
+	padding: 0 20px;
+	line-height: 40px;
+	color: #666;
+}
+#menu li a:hover, #menu li.active a {
+	background-color: #f1f1f1;
+	border-bottom: 2px solid #DDD;
+	color: #999;
+}
+#nav ul {margin-left: 12px;}
+#nav {padding: 0 16px 0 0; background: url(../img/grey.png) no-repeat right;}
+#nav div {float: left; height: 44px; width: 12px; background: url(../img/grey.png) no-repeat left;}
 
+/* Black Menu */
+#nav.black ul {
+	border-top: 2px solid #333;
+	border-bottom: 2px solid #000;
+	background: #333;}
+#nav.black a {color: #CCC;}
+#nav.black li a:hover, #nav.black li.active a {color: #999; background: #555; border-bottom: 2px solid #444;}
+#nav.black {background: url(../img/black.png) no-repeat right;}
+#nav.black div {background: url(../img/black.png) no-repeat left;}
+			
 /* posts */
 .post {}
   .post h1, .post h1 a { font-size: 24px; margin-bottom: 10px; }
   .post-content { }
   .post #comments { margin-top: 10px; }
+
+
 
 /* slider */
 #full-slider-wrapper {
