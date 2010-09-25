@@ -11,6 +11,7 @@
 			</div>
 			<?php if(comments_open()): ?>
 				<div id="comments">
+				  <h2>Comments</h2>
 					<?php comments_template(); ?>
 				</div>
 			<?php endif; ?>
