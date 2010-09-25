@@ -1,6 +1,13 @@
+/* global */
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-color: #F1F1F1;
+  color: #444;
+}
+
 /* layout */
-.container { width: 960px; margin: 0 auto; }
-#header { clear: both; }
+.container { width: 960px; margin: 0 auto; background-color: #FFF; padding: 10px; }
+#header { clear: both; padding: 10px 0;  }
 #content { float: left; width: 700px; }
 #sidebar { float: left; width: 260px; }
 #footer { clear: both; }
@@ -9,19 +16,13 @@
 #nav ul { list-style: none;   }
 #nav ul li { display: inline; }
 
-/* style */
-#header {}
-#nav {}
-#sidebar {}
-#footer {}
-
+/* slider */
 #full-slider-wrapper {
     overflow: hidden;
 }
 
 #full-slider {
     position: relative;
-    width: 800px;
     height: 600px;
     margin: 0 auto;
 }
@@ -30,7 +31,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 800px;
     height: 600px;
     visibility: hidden;
 }
@@ -68,11 +68,4 @@
 
 #full-slider-nav-right:hover {
     border-left-color: #999;
-}
-
-/* styles below are only for this example */
-
-#full-slider .slide-panel {
-    background-color: #555;
-    color: #DDD;
 }
