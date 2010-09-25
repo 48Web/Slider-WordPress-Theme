@@ -31,10 +31,6 @@
 		
 	<?php else: ?>
 		<meta name="viewport" content="width=960" />
-
-		<?php // Top Up Image Gallery (.top_up) ?>
-		<!--<script type="text/javascript" src="http://gettopup.com/releases/latest/top_up-min.js"></script>-->
-		
 	<?php endif ?>
 
 	<?php wp_head(); ?>
@@ -42,15 +38,9 @@
 	<!--Scripts--> 
 	<!-- If we failed to load Google's CDN jQUery, load our local version -->
 	<script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
-	<script type="text/javascript">
-		jQuery(document).ready(function init() { 
-			// jQuery init function
-		});
-	</script>
-	
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/jquery.browser.addEnvClass.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/init.js"></script>
-	 
+	                                                                                                     
 	<script type="text/javascript">
     jQuery(function() {
         function slidePanel( newPanel, direction ) {
@@ -118,7 +108,7 @@
 		<div id="header">
 			<div id="nav">
 				<ul>
-					<li> <a href="/">Home</a> </li>
+					<li> <a href="<?php get_bloginfo('home'); ?>">Home</a> </li>
 					<?php wp_list_pages('title_li='); ?>
 				</ul>
 			</div>
