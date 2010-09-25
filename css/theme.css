@@ -58,11 +58,10 @@ body {
 			
 /* posts */
 .post {}
-  .post h1, .post h1 a { font-size: 24px; margin-bottom: 10px; }
-  .post-content { }
+  .post h1, .post h1 a { font-size: 24px; margin-bottom: 10px; color: #444; }
+  .post-content { line-height: 20px; }
+    .post-content p { margin: 5px 0; }
   .post #comments { margin-top: 10px; }
-
-
 
 /* slider */
 #full-slider-wrapper {
@@ -116,4 +115,39 @@ body {
 
 #full-slider-nav-right:hover {
     border-left-color: #999;
+}
+
+/* wordpress editor files */
+.aligncenter, div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.wp-caption {
+	background-color: #f3f3f3;
+	border: 1px solid #ddd;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; /* optional rounded corners for browsers that support it */
+	margin: 10px;
+	padding-top: 4px;
+	text-align: center;
+}
+.wp-caption img {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
 }
