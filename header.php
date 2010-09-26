@@ -48,7 +48,7 @@
 			<div id="nav" class="black">
 			  <div class="left"></div>
 				<ul id="menu">
-					<li> <a href="<?php get_bloginfo('home'); ?>">Home</a> </li>
+					<li> <a href="<?php echo get_bloginfo('home'); ?>">Home</a> </li>
 					<?php wp_list_pages('title_li='); ?>
 				</ul>
 			</div>
