@@ -1,4 +1,4 @@
-<?
+<?php
 /* Homepage Template */
 global $options;
 foreach ($options as $value) {
@@ -10,7 +10,7 @@ foreach ($options as $value) {
     <div id="full-slider">
    
 <?php
-    if (sld_showPosts == false) {
+    if ($sld_homepageShow == "pages") {
         // show pages in slider
         $mypages = get_pages('sort_column=post_date&sort_order=desc');
         $count = 0;

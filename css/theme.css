@@ -11,7 +11,7 @@ h3 {font-size: 18px;}
 
                   
 /* layout */
-.container { width: 960px; margin: 0 auto; background-color: #FFF; padding: 10px; border-left: solid 2px #ccc; border-right: solid 2px #ccc; border-bottom: solid 2px #ccc; }
+.container { width: 960px; margin: 0 auto; background-color: #FFF; padding: 10px; border-left: solid 2px #ccc; border-right: solid 2px #ccc; border-bottom: solid 2px #ccc;  }
 #header { clear: both; padding: 10px 0; margin-bottom: 10px;  }
 #content { float: left; width: 700px; }
 #sidebar { float: left; width: 240px; margin-left: 20px; }
