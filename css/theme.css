@@ -15,7 +15,7 @@ h3 {font-size: 18px;}
 .container { background-color: #FFF;  border-left: solid 2px #ccc; border-right: solid 2px #ccc; border-bottom: solid 2px #ccc;  }
 #header { clear: both; }
 #main { padding: 10px; }
-#content { float: left; width: 700px; }
+#content { float: left; width: 680px; }
 #sidebar { float: left; width: 240px; margin-left: 20px; }
 #footer { clear: both; font-size: 10px; text-align: center; border-top: solid 1px #f1f1f1; padding: 10px; }
 
@@ -71,6 +71,50 @@ h3 {font-size: 18px;}
   .post-content { line-height: 20px; padding-top: 10px; }
     .post-content p { margin: 5px 0; }
   .post #comments { margin-top: 10px; }
+
+/* comments */
+#comments h2 { border-bottom: 1px solid #CCC;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+h3#comments { margin-bottom: 5px; }
+.commentlist { padding: 0 35px; }
+.commentlist li, #commentform input, #commentform textarea {
+	
+	}
+
+.commentlist li {
+	font-weight: bold;
+	}
+
+.commentlist li .avatar {
+	float: right;
+	border: 1px solid #eee;
+	padding: 2px;
+	background: #fff;
+	}
+
+.commentlist cite, .commentlist cite a {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.1em;
+	}
+
+.commentlist p {
+	font-weight: normal;
+	line-height: 1.5em;
+	text-transform: none;
+	}
+
+#respond { margin-top: 20px;}
+#commentform p {
+	
+	}
+
+.commentmetadata {
+	font-weight: normal;
+	}
+
 
 /* slider */
 #full-slider-wrapper {
