@@ -13,10 +13,11 @@ h3 {font-size: 18px;}
 /* layout */
 .wrap { width: 960px; margin: 0 auto; }
 .container { background-color: #FFF;  border-left: solid 2px #ccc; border-right: solid 2px #ccc; border-bottom: solid 2px #ccc;  }
-#header { clear: both; border: solid 1px #333; }
+#header { clear: both; }
+#main { padding: 10px; }
 #content { float: left; width: 700px; }
 #sidebar { float: left; width: 240px; margin-left: 20px; }
-#footer { clear: both; font-size: 10px; text-align: right; }
+#footer { clear: both; font-size: 10px; text-align: center; border-top: solid 1px #f1f1f1; padding: 10px; }
 
 /* sidebar */
 #sidebar h2 { border-bottom: solid 1px #ccc; margin-bottom: 5px; line-height: 30px; }
@@ -66,7 +67,7 @@ h3 {font-size: 18px;}
 			
 /* posts */
 .post {}
-  .post h1, .post h1 a { font-size: 24px; margin-bottom: 15px; color: #444; }
+  .post h1, .post h1 a { font-size: 35px; margin-bottom: 15px; color: #444; }
   .post-content { line-height: 20px; padding-top: 10px; }
     .post-content p { margin: 5px 0; }
   .post #comments { margin-top: 10px; }
