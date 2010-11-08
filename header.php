@@ -40,11 +40,10 @@
 	<script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/jquery.browser.addEnvClass.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/init.js"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/slider.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/slider.js"></script>
 </head>
 <body <?php body_class(); ?>>
-	<div class="container">
-		<div id="header">
+    <div id="header" class="wrap">
 			<div id="nav" class="black">
 			  <div class="left"></div>
 				<ul id="menu">
@@ -53,4 +52,5 @@
 				</ul>
 			</div>
 		</div><!--#end header-->
+	<div class="container wrap">
 		

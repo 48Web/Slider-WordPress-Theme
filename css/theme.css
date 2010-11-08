@@ -11,8 +11,9 @@ h3 {font-size: 18px;}
 
                   
 /* layout */
-.container { width: 960px; margin: 0 auto; background-color: #FFF; padding: 10px; border-left: solid 2px #ccc; border-right: solid 2px #ccc; border-bottom: solid 2px #ccc;  }
-#header { clear: both; padding: 10px 0; margin-bottom: 10px;  }
+.wrap { width: 960px; margin: 0 auto; }
+.container { background-color: #FFF;  border-left: solid 2px #ccc; border-right: solid 2px #ccc; border-bottom: solid 2px #ccc;  }
+#header { clear: both; border: solid 1px #333; }
 #content { float: left; width: 700px; }
 #sidebar { float: left; width: 240px; margin-left: 20px; }
 #footer { clear: both; font-size: 10px; text-align: right; }
@@ -54,9 +55,6 @@ h3 {font-size: 18px;}
 	border-bottom: 2px solid #DDD;
 	color: #999;
 }
-#nav ul {margin-left: 12px;}
-#nav {padding: 0 16px 0 0; background: url(../img/grey.png) no-repeat right;}
-#nav div {float: left; height: 44px; width: 12px; background: url(../img/grey.png) no-repeat left;}
 
 /* Black Menu */
 #nav.black ul {
@@ -65,8 +63,6 @@ h3 {font-size: 18px;}
 	background: #333;}
 #nav.black a {color: #CCC;}
 #nav.black li a:hover, #nav.black li.active a {color: #999; background: #555; border-bottom: 2px solid #444;}
-#nav.black {background: url(../img/black.png) no-repeat right;}
-#nav.black div {background: url(../img/black.png) no-repeat left;}
 			
 /* posts */
 .post {}
