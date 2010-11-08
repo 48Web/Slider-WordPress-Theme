@@ -105,6 +105,7 @@ h3#comments { margin-bottom: 5px; }
 	line-height: 1.5em;
 	text-transform: none;
 	}
+.commentlist p.meta { font-style: italic; font-size: .9em;}
 
 #respond { margin-top: 20px;}
 #commentform p {
