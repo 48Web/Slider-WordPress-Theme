@@ -73,7 +73,7 @@ add_action( 'init', 'theme_addmenus' );
 
 function theme_nav() {
     if ( function_exists( 'wp_nav_menu' ) )
-        wp_nav_menu( 'menu=main_nav&menu_class=menu black&fallback_cb=theme_nav_fallback' );
+        wp_nav_menu( 'menu=main_nav&container_class=menu black&fallback_cb=theme_nav_fallback' );
     else
         theme_nav_fallback();
 }
