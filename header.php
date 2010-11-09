@@ -47,10 +47,7 @@
         <div id="header" class="wrap">
             <div id="nav" class="black">
               <div class="left"></div>
-                <ul id="menu">
-                    <li> <a href="<?php echo get_bloginfo('home'); ?>">Home</a> </li>
-                    <?php wp_list_pages('title_li='); ?>
-                </ul>
+                <?php theme_nav(); ?>
             </div>
         </div><!--#end header-->
         <div id="main">

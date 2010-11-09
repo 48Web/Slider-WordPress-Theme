@@ -28,7 +28,8 @@ h3 {font-size: 18px;}
 
 /* navigation */
 /* matte css menu via http://13styles.com/css-menus/matte/ */
-#menu {
+.menu {} /* menu wrapper */
+.menu ul {
 	font-family: Arial, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -40,30 +41,30 @@ h3 {font-size: 18px;}
 	border-top: 2px solid #eee;
 	border-bottom: 2px solid #ccc;
 }
-#menu li {
+.menu ul li {
 	float: left;
 	margin: 0;				
 }
-#menu li a {
+.menu ul li a {
 	text-decoration: none;
 	display: block;
 	padding: 0 20px;
 	line-height: 40px;
 	color: #666;
 }
-#menu li a:hover, #menu li.active a {
+.menu ul li a:hover, .menu ul li.active a {
 	background-color: #f1f1f1;
 	border-bottom: 2px solid #DDD;
 	color: #999;
 }
 
 /* Black Menu */
-#nav.black ul {
+.black ul {
 	border-top: 2px solid #333;
 	border-bottom: 2px solid #000;
-	background: #333;}
-#nav.black a {color: #CCC;}
-#nav.black li a:hover, #nav.black li.active a {color: #999; background: #555; border-bottom: 2px solid #444;}
+	background: #333; }
+.black ul li a {color: #FFF;}
+.black ul li a:hover, #nav.black li.active a {color: #999; background: #555; border-bottom: 2px solid #444;}
 			
 /* posts */
 .post {}
